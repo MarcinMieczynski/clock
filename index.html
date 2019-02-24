@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("img/tlo.jpg");
+        margin: 0;
+        padding: 0;
+        font-family: "VT323", monospace;
+      }
+
+      .clock_face {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border: 15px solid white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .clock {
+        position: absolute;
+        width: 50%;
+        height: 6px;
+        background-color: white;
+        transform: rotate(90deg);
+        top: 50%;
+        transform-origin: 100%;
+      }
+
+      .hour {
+        height: 10px;
+      }
+
+      p {
+        margin-top: 5%;
+        color: white;
+        font-size: 70px;
+      }
+
+      .date {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        font-family: "Anton", sans-serif;
+      }
+
+      .circle {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="date"><p>Godzina: 12:00:00</p></div>
+    <div class="clock_face">
+      <div class="hour clock"></div>
+      <div class="minut clock"></div>
+      <div class="second clock"></div>
+      <div class="circle"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
